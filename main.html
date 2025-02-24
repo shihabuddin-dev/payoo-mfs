@@ -19,7 +19,7 @@
                 <div class="flex gap-2 items-center">
                     <img class="w-14" src="assets/icons/main-logo.svg" alt="this is logo">
                     <div>
-                        <h1 class="text-lg font-extrabold"> $4500</h1>
+                        <h1 class="text-2xl font-bold"> $4500</h1>
                         <p class="text-sm text-[#08080880]">Available Balance</p>
                     </div>
                 </div>
@@ -73,7 +73,38 @@
             </section>
         </header>
         <!-- main section  -->
-        <main class="mx-6">
+        <main>
+            <p class="px-8 text-lg font-semibold text-[#080808E6] pt-7 pb-2">Add Money</p>
+            <!-- select bank  -->
+            <div>
+                <div class=" hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <label class="fieldset-label text-base text-[#080808B3] font-medium">Select A Bank</label>
+                            <select class="select rounded-md">
+                                <option disabled selected>Select Bank</option>
+                                <option value="Bkash">Bkash</option>
+                                <option value="Nagad">Nagad</option>
+                                <option value="Rocket">Rocket</option>
+                            </select>
+                            <fieldset class="fieldset">
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Bank Account Number</label>
+                                <input value="01740520249" id="account-number" type="number" class="input rounded-md"
+                                    placeholder="Enter 11 Digit Acount Number" required />
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to Add</label>
+                                <input id="pin-number" type="number" class="input rounded-md"
+                                    placeholder="Enter Your Amount" required />
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
+                                <input value="1234" id="pin-number" type="text" class="input rounded-md"
+                                    placeholder="Enter Your Pin Number" required />
+                               
+                                <button id="login-btn" class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Add Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
         </main>
