@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo MFS</title>
+    <title>Payoo Dashboard</title>
+    <link rel="shortcut icon" href="assets/icons/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="style.css">
@@ -19,13 +20,13 @@
                 <div class="flex gap-2 items-center">
                     <img class="w-14" src="assets/icons/main-logo.svg" alt="this is logo">
                     <div>
-                        <h1 class="text-2xl font-bold"> $4500</h1>
+                        <h1 class="text-2xl font-bold"> $ <span id="main-balance">4500</span></h1>
                         <p class="text-sm text-[#08080880]">Available Balance</p>
                     </div>
                 </div>
                 <!-- logout button  -->
                 <div>
-                    <button class="btn flex gap-2 border-2 rounded-lg border-gray-300 py-2 px-3">
+                    <button id="btn-logout" class="btn flex gap-2 border-2 rounded-lg border-gray-300 py-2 px-3">
                         <img src="assets/icons/logout.svg" alt="this is logout images">
                         <p class="text-sm text-[#08080880]">Log Out</p>
                     </button>
@@ -81,34 +82,43 @@
 
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                         <div class="card-body">
+                            <!-- Select A Bank  -->
                             <label class="fieldset-label text-base text-[#080808B3] font-medium">Select A Bank</label>
                             <select class="select rounded-md">
                                 <option disabled selected>Select Bank</option>
                                 <option value="Bkash">Bkash</option>
                                 <option value="Nagad">Nagad</option>
                                 <option value="Rocket">Rocket</option>
+                                <option value="MCash">MCash</option>
+                                <option value="Upay">Upay</option>
                             </select>
                             <fieldset class="fieldset">
-                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Bank Account Number</label>
+                                <!-- Bank Account number -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Bank Account
+                                    Number</label>
                                 <input value="01740520249" id="account-number" type="number" class="input rounded-md"
                                     placeholder="Enter 11 Digit Acount Number" required />
-                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to Add</label>
-                                <input id="pin-number" type="number" class="input rounded-md"
+
+                                <!-- Add Amount  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
+                                    Add</label>
+                                <input id="amount" type="number" class="input rounded-md"
                                     placeholder="Enter Your Amount" required />
+                                <!-- Pin Number  -->
                                 <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
                                 <input value="1234" id="pin-number" type="text" class="input rounded-md"
                                     placeholder="Enter Your Pin Number" required />
-                               
-                                <button id="login-btn" class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Add Money</button>
+
+                                <button id="btn-add-money"
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Add Money</button>
                             </fieldset>
                         </div>
                     </div>
                 </div>
             </div>
-
-
         </main>
     </section>
+    <script src="./script/addMoney.js"></script>
 </body>
 
 </html>
