@@ -5,10 +5,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payoo MFS</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <h1>You Have logged in successfully</h1>
+<body class="bg-slate-800 outfit-font">
+    <section class="max-w-md min-h-screen mx-auto  bg-gray-200">
+        <!-- header section  -->
+        <header class="bg-slate-50 pt-4 pb-8 rounded-b-2xl">
+            <!-- navbar  -->
+            <nav class="flex justify-between items-center mx-6">
+                <div class="flex gap-2 items-center">
+                    <img class="w-14" src="assets/icons/main-logo.svg" alt="this is logo">
+                    <div>
+                        <h1 class="text-lg font-extrabold"> $4500</h1>
+                        <p class="text-sm text-[#08080880]">Available Balance</p>
+                    </div>
+                </div>
+                <!-- logout button  -->
+                <div>
+                    <button class="btn flex gap-2 border-2 rounded-lg border-gray-300 py-2 px-3">
+                        <img src="assets/icons/logout.svg" alt="this is logout images">
+                        <p class="text-sm text-[#08080880]">Log Out</p>
+                    </button>
+                </div>
+            </nav>
+            <hr class="text-gray-300 border-1 mt-6">
+            <!-- welcome to payoo section  -->
+            <section class="mx-6 mt-8">
+                <h1 class="text-2xl font-bold">🔥 Welcome to Payooo! </h1>
+                <p class="pt-3 text-[#08080880]">Enjoy easy and convenient financial services with us. Cash Out charge
+                    is low and </p>
+                <!-- card section   -->
+                <div class="pt-6 grid grid-cols-3 gap-4">
+                    <!-- add money  -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/add-money.svg" alt="add money logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Add Money</p>
+                    </div>
+                    <!-- Cash Out  -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/cash-out.svg" alt="Cash Out logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Cash Out</p>
+                    </div>
+                    <!-- Transfer Money  -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/transfer-money.svg" alt="Transfer Money logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Transfer Money</p>
+                    </div>
+                    <!-- Get Bonus -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/get-bonus.svg" alt="Get Bonus logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Get Bonus</p>
+                    </div>
+                    <!-- Pay Bill -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/pay-bill.svg" alt="Pay Bill logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Pay Bill</p>
+                    </div>
+                    <!-- Transaction -->
+                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                        <img class="mx-auto" src="assets/icons/transaction.svg" alt=" Transaction logo">
+                        <p class="text-sm pt-2 text-[#080808B3] text-center"> Transaction</p>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <!-- main section  -->
+        <main class="mx-6">
+
+
+        </main>
+    </section>
 </body>
 
 </html>
