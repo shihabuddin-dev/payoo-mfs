@@ -17,16 +17,17 @@
         <header class="bg-slate-50 pt-4 pb-8 rounded-b-2xl">
             <!-- navbar  -->
             <nav class="flex justify-between items-center mx-6">
-                <div class="flex gap-2 items-center">
+                <div class="flex sm:gap-2 items-center">
                     <img class="w-14" src="assets/icons/main-logo.svg" alt="this is logo">
                     <div>
-                        <h1 class="text-2xl font-bold"> $ <span id="main-balance">4500</span></h1>
-                        <p class="text-sm text-[#08080880]">Available Balance</p>
+                        <h1 class="text-xl sm:text-2xl font-bold"> $ <span id="main-balance">4500</span></h1>
+                        <p class="text-xs sm:text-sm text-[#08080880]">Available Balance</p>
                     </div>
                 </div>
                 <!-- logout button  -->
                 <div>
-                    <button id="btn-logout" class="btn flex gap-2 border-2 rounded-lg border-gray-300 py-2 px-3">
+                    <button id="btn-logout"
+                        class="btn flex gap-2 border-2 rounded-lg border-gray-300 py-2 px-1 sm:px-3">
                         <img src="assets/icons/logout.svg" alt="this is logout images">
                         <p class="text-sm text-[#08080880]">Log Out</p>
                     </button>
@@ -35,25 +36,26 @@
             <hr class="text-gray-300 border-1 mt-6">
             <!-- welcome to payoo section  -->
             <section class="mx-6 mt-8">
-                <h1 class="text-2xl font-bold">🔥 Welcome to Payooo! </h1>
+                <h1 class="text-2xl font-bold">🔥 Welcome to <span class="text-[#0874F2]">Payoo!</span> </h1>
                 <p class="pt-3 text-[#08080880]">Enjoy easy and convenient financial services with us. Cash Out charge
                     is low and </p>
                 <!-- card section   -->
-                <div class="pt-6 grid grid-cols-3 gap-4">
+                <div class="pt-6 grid grid-cols-3 gap-2 sm:gap-4">
                     <!-- add money  -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="add-money-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/add-money.svg" alt="add money logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Add Money</p>
                     </div>
                     <!-- Cash Out  -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="cash-out-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/cash-out.svg" alt="Cash Out logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Cash Out</p>
                     </div>
                     <!-- Transfer Money  -->
                     <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/transfer-money.svg" alt="Transfer Money logo">
-                        <p class="text-sm pt-2 text-[#080808B3] text-center">Transfer Money</p>
+                        <p class="text-sm pt-2 text-[#080808B3] text-center">Transfer <span
+                                class="hidden sm:inline">Money</span></p>
                     </div>
                     <!-- Get Bonus -->
                     <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
@@ -75,9 +77,11 @@
         </header>
         <!-- main section  -->
         <main>
-            <p class="px-8 text-lg font-semibold text-[#080808E6] pt-7 pb-2">Add Money</p>
-            <!-- select bank  -->
-            <div>
+            <!-- add money section  -->
+
+            <section id="addMoney">
+                <p class="text-center px-8 text-xl font-medium text-[#0874F2] pt-7 pb-2">Add Money</p>
+
                 <div class=" hero-content flex-col lg:flex-row-reverse">
 
                     <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -102,7 +106,7 @@
                                 <!-- Add Amount  -->
                                 <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
                                     Add</label>
-                                <input id="amount" type="number" class="input rounded-md"
+                                <input id="add-amount" type="number" class="input rounded-md"
                                     placeholder="Enter Your Amount" required />
                                 <!-- Pin Number  -->
                                 <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
@@ -115,10 +119,46 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+            <!-- cash out section  -->
+            <section id="cashOut">
+                <p class="text-center px-8 text-xl font-medium text-[#0874F2] pt-7 pb-2">Cash Out</p>
+
+                <div class=" hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+
+                            <fieldset class="fieldset">
+                                <!-- Bank Account number -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Agent
+                                    Number</label>
+                                <input id="account-number" type="number" class="input rounded-md"
+                                    placeholder="Enter 11 Digit Agent Number" required />
+
+                                <!-- CashOut Amount  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
+                                    Cash Out</label>
+                                <input id="cashOut-amount" type="number" class="input rounded-md"
+                                    placeholder="Enter Your Amount" required />
+                                <!-- Pin Number  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
+                                <input value="1234" id="cashOut-pin-number" type="text" class="input rounded-md"
+                                    placeholder="Enter Your Pin Number" required />
+
+                                <button id="btn-cash-out"
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Cash Out</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </section>
     <script src="./script/addMoney.js"></script>
+    <script src="./script/toggle.js"></script>
+    <script src="./script/cashout.js"></script>
 </body>
 
 </html>
