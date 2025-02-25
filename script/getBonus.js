@@ -9,7 +9,7 @@ document.getElementById('btn-get-bonus')
         const convertedMainBalance = parseFloat(mainBalance);
         if (couponCode === 'SHIHAB') {
             if (convertedBonusPin === 1234) {
-                alert('You Got 500 USD Bonus ');
+                alert('Congratulation! You Got Bonus $ 500 From Shihab Uddin');
                 const currentBalance = convertedMainBalance + 500;
                 document.getElementById('main-balance').innerText = currentBalance;
             }

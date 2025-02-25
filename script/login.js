@@ -7,6 +7,7 @@ document.getElementById('btn-login')
         if (accountNumber.length === 11) {
             if (convertedPin === 1234) {
                 window.location.href = './main.html';
+                alert('Information matched ! You have Logged In')
             }
             else {
                 alert('Wrong Pin Number');

@@ -10,12 +10,13 @@ document.getElementById('btn-transfer')
         const convertedTrPin = parseInt(transferPin);
         const mainBalance = document.getElementById('main-balance').innerText;
         const convertedMainBalance = parseFloat(mainBalance);
+        document.getElementById('transfer-amount').value = '';
         if (userAccount.length === 11) {
             if (convertedTrAmount <= convertedMainBalance && convertedTrAmount > 0) {
                 if (convertedTrPin === 1234) {
                     const currentBalance = convertedMainBalance - convertedTrAmount;
                     document.getElementById('main-balance').innerText = currentBalance;
-                    alert(`Transfer Successful Your Balance is ${currentBalance}`);
+                    alert(`Successfully You Transfer $ ${convertedTrAmount}`);
                 }
                 else (
                     alert('Pin Number did not Matched')
