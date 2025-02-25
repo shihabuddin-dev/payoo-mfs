@@ -1,6 +1,7 @@
 // user-account-number transfer-amount transfer-pin-number 
 document.getElementById('btn-transfer')
     .addEventListener('click', function (event) {
+        event.preventDefault();
         const userAccount = document.getElementById('user-account-number').value;
         // const convertedAccount = parseInt(userAccount);
         const transferAmount = document.getElementById('transfer-amount').value;

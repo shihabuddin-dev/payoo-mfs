@@ -134,7 +134,7 @@
                                 <!-- Bank Account number -->
                                 <label class="fieldset-label text-base text-[#080808B3] font-medium">Agent
                                     Number</label>
-                                <input id="account-number" type="number" class="input rounded-md"
+                                <input value="01521406742" id="account-number" type="number" class="input rounded-md"
                                     placeholder="Enter 11 Digit Agent Number" required />
 
                                 <!-- CashOut Amount  -->
@@ -165,9 +165,10 @@
 
                             <fieldset class="fieldset">
                                 <!-- User Account number -->
-                                <label class="fieldset-label text-base text-[#080808B3] font-medium">User Account Number</label>
-                                <input value="01521406742" id="user-account-number" type="number" class="input rounded-md"
-                                    placeholder="Enter 11 Digit  Number" required />
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">User Account
+                                    Number</label>
+                                <input value="01521406742" id="user-account-number" type="number"
+                                    class="input rounded-md" placeholder="Enter 11 Digit  Number" required />
 
                                 <!-- transfer Amount  -->
                                 <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
@@ -180,7 +181,78 @@
                                     placeholder="Enter Your Pin Number" required />
 
                                 <button id="btn-transfer"
-                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Transfer Money</button>
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Transfer
+                                    Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Get Bonus section  -->
+            <section id="getBonus">
+                <p class="text-center px-8 text-xl font-medium text-[#0874F2] pt-7 pb-2">Get Bonus</p>
+
+                <div class=" hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+
+                            <fieldset class="fieldset">
+                                <!-- Get Bonus Amount  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Apply
+                                    Coupon</label>
+                                <input value="SHIHAB" id="coupon-code" type="text" class="input rounded-md"
+                                    placeholder="Apply Your Coupon" required />
+                                <!-- Pin Number  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
+                                <input value="1234" id="bonus-pin-number" type="text" class="input rounded-md"
+                                    placeholder="Enter Your Pin Number" required />
+
+                                <button id="btn-get-bonus"
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Get Bonus</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Pay Bill section  -->
+
+            <section id="payBill">
+                <p class="text-center px-8 text-xl font-medium text-[#0874F2] pt-7 pb-2">Pay Bill</p>
+
+                <div class=" hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+                            <!-- Select A Bank  -->
+                            <label class="fieldset-label text-base text-[#080808B3] font-medium">Select to Pay</label>
+                            <select id="select-pay" class="select rounded-md">
+                                <option disabled selected>Bill Type</option>
+                                <option value="Electricity">Electricity</option>
+                                <option value="Gas-Karnafuli">Gas-Karnafuli</option>
+                                <option value="Link3">Link3</option>
+                                <option value="Nesco">Nesco</option>
+                                <option value="Palli-Bidyut">Palli-Bidyut</option>
+                            </select>
+                            <fieldset class="fieldset">
+                                <!-- Bank Account number -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Biller Account
+                                    Number</label>
+                                <input value="01521406742" id="billPay-account-number" type="number"
+                                    class="input rounded-md" placeholder="Enter Biller Acount Number" required />
+
+                                <!-- Add Amount  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
+                                    Pay</label>
+                                <input id="payBill-amount" type="number" class="input rounded-md"
+                                    placeholder="Pay Bill Amount" required />
+                                <!-- Pin Number  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
+                                <input value="1234" id="payBill-pin-number" type="text" class="input rounded-md"
+                                    placeholder="Enter Your Pin Number" required />
+
+                                <button id="btn-pay-bill"
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Pay Bill</button>
                             </fieldset>
                         </div>
                     </div>
