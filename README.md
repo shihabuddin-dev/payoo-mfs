@@ -1,7 +1,5 @@
 # 🚀 Payoo MFS - Digital Mobile Financial Services
 
-![Payoo MFS Banner](https://via.placeholder.com/1200x400?text=Payoo+MFS)
-
 ## 🌐 Live Demo
 🔗 [Visit Payoo MFS](https://shihabuddin-dev.github.io/payoo-mfs/)
 
@@ -40,7 +38,7 @@ Contributions are welcome! If you have any improvements, feel free to fork the r
 This project is licensed under the MIT License. 
 
 ## 📞 Contact
-💡 Developed by **Shihab** 🚀  
+💡 Developed by **Shihab Uddin** 🚀  
 😄 Facebook: [Shihab Uddin](https://www.facebook.com/shihabuddinReal)  
 🐙 GitHub: [Shihabuddin-dev](https://github.com/shihabuddin-dev)
 
