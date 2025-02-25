@@ -52,23 +52,23 @@
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Cash Out</p>
                     </div>
                     <!-- Transfer Money  -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="transfer-money-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/transfer-money.svg" alt="Transfer Money logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Transfer <span
                                 class="hidden sm:inline">Money</span></p>
                     </div>
                     <!-- Get Bonus -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="get-bonus-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/get-bonus.svg" alt="Get Bonus logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Get Bonus</p>
                     </div>
                     <!-- Pay Bill -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="pay-bill-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/pay-bill.svg" alt="Pay Bill logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center">Pay Bill</p>
                     </div>
                     <!-- Transaction -->
-                    <div class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
+                    <div id="tr-history-option" class="cursor-pointer py-5 border-2 border-gray-300 rounded-lg">
                         <img class="mx-auto" src="assets/icons/transaction.svg" alt=" Transaction logo">
                         <p class="text-sm pt-2 text-[#080808B3] text-center"> Transaction</p>
                     </div>
@@ -154,11 +154,48 @@
                     </div>
                 </div>
             </section>
+            <!-- Transfer Money section  -->
+            <section id="transferMoney">
+                <p class="text-center px-8 text-xl font-medium text-[#0874F2] pt-7 pb-2">Transfer Money</p>
+
+                <div class=" hero-content flex-col lg:flex-row-reverse">
+
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <div class="card-body">
+
+                            <fieldset class="fieldset">
+                                <!-- User Account number -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">User Account Number</label>
+                                <input value="01521406742" id="user-account-number" type="number" class="input rounded-md"
+                                    placeholder="Enter 11 Digit  Number" required />
+
+                                <!-- transfer Amount  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Amount to
+                                    Transfer</label>
+                                <input id="transfer-amount" type="number" class="input rounded-md"
+                                    placeholder="Enter Your Amount" required />
+                                <!-- Pin Number  -->
+                                <label class="fieldset-label text-base text-[#080808B3] font-medium">Pin Number</label>
+                                <input value="1234" id="transfer-pin-number" type="text" class="input rounded-md"
+                                    placeholder="Enter Your Pin Number" required />
+
+                                <button id="btn-transfer"
+                                    class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Transfer Money</button>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </section>
-    <script src="./script/addMoney.js"></script>
     <script src="./script/toggle.js"></script>
+    <script src="./script/addMoney.js"></script>
     <script src="./script/cashout.js"></script>
+    <script src="./script/transferMoney.js"></script>
+    <script src="./script/getBonus.js"></script>
+    <script src="./script/payBill.js"></script>
+    <script src="./script/trHistory.js"></script>
 </body>
 
 </html>
