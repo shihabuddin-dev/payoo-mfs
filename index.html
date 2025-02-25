@@ -23,7 +23,7 @@
             </nav>
         </header>
         <!-- login option  -->
-        <div>
+        <div id="login-option">
             <div class="hero-content flex-col lg:flex-row-reverse">
                 <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
@@ -34,7 +34,7 @@
                             <label class="fieldset-label text-base text-black font-medium">4 Digit Pin</label>
                             <input value="1234" id="pin-number" type="text" class="input rounded-md"
                                 placeholder="Enter 4 Digit Pin" required />
-                            <div><a class="link link-hover">Forgot password?</a></div>
+                            <div id="btn-forgot"><a class="link link-hover">Forgot password?</a></div>
                             <button id="btn-login"
                                 class="btn btn-neutral mt-4 border-none bg-[#0874F2] rounded-md">Login</button>
                         </fieldset>
@@ -42,8 +42,31 @@
                 </div>
             </div>
         </div>
+        <!-- forgot password  -->
+        <section id="forgotPassword">
+
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <h3 class="text-center px-4 text-2xl font-medium text-[#0874F2] pt-7 pb-2">Please Contact With
+                        Developer</h3>
+                    <p class="text-center pt-4 pb-0 px-4 text-lg font-medium "> Are You Willing to change this Payoo
+                        Mobile Financial Service Password!! So, Let's Talk With <span class="text-[#0874F2]"><a
+                                href="https://www.facebook.com/shihabuddinReal" target="_blank">Shihab
+                                Uddin</a> </span>Who Developed This MFS Application! Great Day!</p>
+                    <form class="card-body">
+
+                        <div id="btn-home"><a class="link link-hover">Home Page</a></div>
+                        <button id="btn-contact"
+                            class="btn btn-neutral mt-2 border-none bg-[#0874F2] rounded-md">Contact With Me</button>
+
+                    </form>
+                </div>
+            </div>
+        </section>
     </section>
+
     <script src="./script/login.js"></script>
+    <script src="./script/indexToggle.js"></script>
 </body>
 
 </html>
