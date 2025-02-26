@@ -1,65 +1,66 @@
 // Whole section 
-document.getElementById('transactionHistory').style.display = 'block';
-document.getElementById('transferMoney').style.display = 'none';
-document.getElementById('addMoney').style.display = 'none';
-document.getElementById('cashOut').style.display = 'none';
-document.getElementById('getBonus').style.display = 'none';
-document.getElementById('payBill').style.display = 'none';
+handleToggle('transactionHistory', 'block');
+handleToggle('addMoney', 'none');
+handleToggle('cashOut', 'none');
+handleToggle('transferMoney', 'none');
+handleToggle('getBonus', 'none');
+handleToggle('payBill', 'none');
+
 // add money section 
 document.getElementById('add-money-option')
     .addEventListener('click', function () {
-        document.getElementById('addMoney').style.display = 'block';
-        document.getElementById('cashOut').style.display = 'none';
-        document.getElementById('transferMoney').style.display = 'none';
-        document.getElementById('getBonus').style.display = 'none';
-        document.getElementById('payBill').style.display = 'none';
-        document.getElementById('transactionHistory').style.display = 'none';
+        handleToggle('addMoney', 'block');
+        handleToggle('cashOut', 'none');
+        handleToggle('transferMoney', 'none');
+        handleToggle('getBonus', 'none');
+        handleToggle('payBill', 'none');
+        handleToggle('transactionHistory', 'none');
+
     });
 // CashOut section 
-document.getElementById('cash-out-option')
-    .addEventListener('click', function () {
-        document.getElementById('cashOut').style.display = 'block';
-        document.getElementById('addMoney').style.display = 'none';
-        document.getElementById('transferMoney').style.display = 'none';
-        document.getElementById('getBonus').style.display = 'none';
-        document.getElementById('payBill').style.display = 'none';
-        document.getElementById('transactionHistory').style.display = 'none';
-    });
+document.getElementById('cash-out-option').addEventListener('click', function () {
+    handleToggle('cashOut', 'block');
+    handleToggle('payBill', 'none');
+    handleToggle('addMoney', 'none');
+    handleToggle('transferMoney', 'none');
+    handleToggle('getBonus', 'none');
+    handleToggle('transactionHistory', 'none');
+});
 // transfer Money section
 document.getElementById('transfer-money-option').addEventListener('click', function () {
-    document.getElementById('transferMoney').style.display = 'block';
-    document.getElementById('addMoney').style.display = 'none';
-    document.getElementById('cashOut').style.display = 'none';
-    document.getElementById('getBonus').style.display = 'none';
-    document.getElementById('payBill').style.display = 'none';
-    document.getElementById('transactionHistory').style.display = 'none';
+    handleToggle('transferMoney', 'block');
+    handleToggle('payBill', 'none');
+    handleToggle('addMoney', 'none');
+    handleToggle('cashOut', 'none');
+    handleToggle('getBonus', 'none');
+    handleToggle('transactionHistory', 'none');
 });
 // Get Bonus section
 document.getElementById('get-bonus-option').addEventListener('click', function () {
-    document.getElementById('getBonus').style.display = 'block';
-    document.getElementById('addMoney').style.display = 'none';
-    document.getElementById('cashOut').style.display = 'none';
-    document.getElementById('transferMoney').style.display = 'none';
-    document.getElementById('payBill').style.display = 'none';
-    document.getElementById('transactionHistory').style.display = 'none';
+    handleToggle('getBonus', 'block');
+    handleToggle('payBill', 'none');
+    handleToggle('addMoney', 'none');
+    handleToggle('cashOut', 'none');
+    handleToggle('transferMoney', 'none');
+    handleToggle('transactionHistory', 'none');
 
 })
 //  Pay Bill section
 document.getElementById('pay-bill-option').addEventListener('click', function () {
-    document.getElementById('payBill').style.display = 'block';
-    document.getElementById('getBonus').style.display = 'none';
-    document.getElementById('addMoney').style.display = 'none';
-    document.getElementById('cashOut').style.display = 'none';
-    document.getElementById('transferMoney').style.display = 'none';
-    document.getElementById('transactionHistory').style.display = 'none';
+    handleToggle('payBill', 'block');
+    handleToggle('addMoney', 'none');
+    handleToggle('cashOut', 'none');
+    handleToggle('transferMoney', 'none');
+    handleToggle('getBonus', 'none');
+    handleToggle('transactionHistory', 'none');
 })
 
 // tr-history-option 
 document.getElementById('tr-history-option').addEventListener('click', function () {
-    document.getElementById('transactionHistory').style.display = 'block';
-    document.getElementById('payBill').style.display = 'none';
-    document.getElementById('getBonus').style.display = 'none';
-    document.getElementById('addMoney').style.display = 'none';
-    document.getElementById('cashOut').style.display = 'none';
-    document.getElementById('transferMoney').style.display = 'none';
+    handleToggle('transactionHistory', 'block');
+    handleToggle('addMoney', 'none');
+    handleToggle('cashOut', 'none');
+    handleToggle('transferMoney', 'none');
+    handleToggle('getBonus', 'none');
+    handleToggle('payBill', 'none');
 })

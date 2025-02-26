@@ -12,6 +12,7 @@ document.getElementById('btn-get-bonus')
                 alert('Congratulation! You Got Bonus $ 500 From Shihab Uddin');
                 const currentBalance = convertedMainBalance + 500;
                 document.getElementById('main-balance').innerText = currentBalance;
+
             }
             else {
                 alert('Pin Number did not Matched')
