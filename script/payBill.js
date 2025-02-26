@@ -16,7 +16,34 @@ document.getElementById('btn-pay-bill').addEventListener('click', function (even
                 if (convertedPin === 1234) {
                     const currentBalance = convertedMainBalance - convertedBillAmount;
                     document.getElementById('main-balance').innerText = currentBalance;
-                    alert(`Successfully You have Paid bill $ ${convertedBillAmount}`)
+                    alert(`Successfully You have Paid bill $ ${convertedBillAmount}`);
+
+                    const allTransaction = document.getElementById('all-transaction');
+                    const div = document.createElement('div');
+                    div.innerHTML = `
+                            <div class="flex justify-between items-center bg-white px-6 py-2 rounded-md hover:bg-[#F7A93f]">
+                        <div class="flex gap-4 justify-center items-center ">
+                            <div class="bg-slate-100 rounded-full p-3 ">
+                                <img class="mx-auto" src="assets/icons/pay-bill.svg" alt="">
+                            </div>
+                            <div class="grid -gap-1">
+                                <div class="items-center flex justify-between gap-2">
+                                    <p class="font-semibold text-[#080808B3]">Paid ${selectPay} Bill</p>
+                                    <p class="text-lg font-semibold text-red-500">- $${convertedBillAmount}</p>
+                                </div>
+                                <div class="items-center flex gap-6">
+                                    <small class="text-sm  text-[#080808B3]]">Trx ID: CBM${randomTrxID} </small>
+                                    <small class="text-xs text-[#080808B3]">${getDateTimeNow()}</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/icons/details.svg" alt="">
+                        </div>
+                    </div>
+                    `;
+                    allTransaction.appendChild(div);
+
                 }
                 else {
                     alert('Pin Number did not Matched')
