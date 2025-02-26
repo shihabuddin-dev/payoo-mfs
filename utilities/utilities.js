@@ -2,7 +2,7 @@ function handleToggle(id, status) {
     document.getElementById(id).style.display = status;
 }
 
-
+// transaction Time 
 function getDateTimeNow() {
     const now = new Date();
     const today = new Date();

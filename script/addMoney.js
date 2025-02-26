@@ -20,7 +20,7 @@ document.getElementById('btn-add-money')
 
 
         if (selectBank === 'Bkash' || selectBank === 'Nagad' || selectBank === 'Rocket' || selectBank == 'MCash' || selectBank === 'Upay') {
-            if (accountNumber.length === 11) {
+            if (accountNumber.length === 11 && accountNumber.startsWith("01") && !accountNumber.includes(" ")) {
                 if (convertedAddAmount <= convertedMainBalance && convertedAddAmount > 0) {
                     if (convertedPinNumber === 1234) {
                         const currentBalance = convertedMainBalance + convertedAddAmount;
@@ -65,7 +65,7 @@ document.getElementById('btn-add-money')
 
             }
             else {
-                alert('Please Provide Valid Account Number')
+                alert('Please Provide Valid Account Number , Must StartsWith 01')
             }
         }
         else {

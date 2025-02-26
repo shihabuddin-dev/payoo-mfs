@@ -45,6 +45,6 @@ document.getElementById('btn-get-bonus')
             }
         }
         else {
-            alert('Please Enter a Valid Coupon Number')
+            alert('You Will not able to use it Multiple Times, This Coupon Code is One Time Useable.')
         }
     })

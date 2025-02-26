@@ -11,7 +11,7 @@ document.getElementById('btn-pay-bill').addEventListener('click', function (even
     const convertedMainBalance = parseFloat(mainBalance);
     document.getElementById('payBill-amount').value = '';
     if (selectPay === 'Electricity' || selectPay === 'Gas-Karnafuli' || selectPay === 'Link3' || selectPay === 'Nesco' || selectPay === 'Palli-Bidyut') {
-        if (payAccount.length === 11) {
+        if (payAccount.length === 11 && payAccount.startsWith("01") && !payAccount.includes(" ")) {
             if (convertedBillAmount <= mainBalance && convertedBillAmount > 0) {
                 if (convertedPin === 1234) {
                     const currentBalance = convertedMainBalance - convertedBillAmount;

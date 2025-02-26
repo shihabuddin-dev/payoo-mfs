@@ -9,7 +9,7 @@ document.getElementById('btn-cash-out')
         const mainBalance = document.getElementById('main-balance').innerText;
         const convertedMainBalance = parseFloat(mainBalance);
         document.getElementById('cashOut-amount').value = '';
-        if (agentNumber.length === 11) {
+        if (agentNumber.length === 11 && agentNumber.startsWith("01") && !agentNumber.includes(" ")) {
             if (convertedMainBalance >= convertedCashOutAmount && convertedCashOutAmount > 0) {
                 if (convertedCashOutPin === 1234) {
                     const currentBalance = convertedMainBalance - convertedCashOutAmount;
@@ -52,6 +52,6 @@ document.getElementById('btn-cash-out')
             }
         }
         else {
-            alert('Please Provide Valid Agent Number')
+            alert('Please Provide Valid Agent Number, Must StartsWith 01')
         }
     })

@@ -4,7 +4,7 @@ document.getElementById('btn-login')
         const accountNumber = document.getElementById('account-number').value;
         const pinNumber = document.getElementById('pin-number').value;
         const convertedPin = parseInt(pinNumber);
-        if (accountNumber.length === 11) {
+        if (accountNumber.length === 11 && accountNumber.startsWith("01") && !accountNumber.includes(" ")) {
             if (convertedPin === 1234) {
                 window.location.href = './main.html';
                 alert('Information matched ! You have Logged In')
