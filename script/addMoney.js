@@ -51,7 +51,7 @@ document.getElementById('btn-add-money')
                         </div>
                     </div>
                         `;
-                        allTransaction.appendChild(div);
+                        allTransaction.prepend(div);
 
 
                     }

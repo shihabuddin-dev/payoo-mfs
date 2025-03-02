@@ -40,7 +40,7 @@ document.getElementById('btn-cash-out')
                         </div>
                     </div>
                         `;
-                    allTransaction.appendChild(div);
+                    allTransaction.prepend(div);
 
                 }
                 else {

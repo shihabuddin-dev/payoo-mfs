@@ -37,7 +37,7 @@ document.getElementById('btn-get-bonus')
                         </div>
                     </div>
                 `;
-                allTransaction.appendChild(div);
+                allTransaction.prepend(div);
                 document.getElementById('coupon-code').value = '';
             }
             else {

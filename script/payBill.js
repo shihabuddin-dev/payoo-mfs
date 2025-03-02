@@ -42,7 +42,7 @@ document.getElementById('btn-pay-bill').addEventListener('click', function (even
                         </div>
                     </div>
                     `;
-                    allTransaction.appendChild(div);
+                    allTransaction.prepend(div);
 
                 }
                 else {

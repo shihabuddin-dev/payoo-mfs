@@ -40,7 +40,7 @@ document.getElementById('btn-transfer')
                         </div>
                     </div>
                     `;
-                    allTransaction.appendChild(div);
+                    allTransaction.prepend(div);
 
                 }
                 else (
