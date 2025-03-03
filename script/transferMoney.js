@@ -36,7 +36,7 @@ document.getElementById('btn-transfer')
                             </div>
                         </div>
                         <div>
-                            
+                             <img src="assets/icons/details.svg" alt="">
                         </div>
                     </div>
                     `;
